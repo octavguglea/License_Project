@@ -1,0 +1,35 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 150px;
+  
+}
+
+.logo img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  list-style-type: none;
+}
+
+.links a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.links a:hover {
+  color: rgb(248, 76, 62);
+}
