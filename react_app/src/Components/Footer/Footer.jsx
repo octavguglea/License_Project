@@ -34,7 +34,7 @@ export const Footer = () => {
             <img src="assets/logo_navbar.jpg" alt="Logo" />
             <ul className="social-links">
               <li>
-                <a href="#">
+                <a href="google.com">
                   <FacebookIcon fontSize="large" />
                 </a>
               </li>

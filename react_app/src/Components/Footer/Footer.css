@@ -32,7 +32,8 @@
   flex-direction: column;
   height: 10em;
   align-items: center;
-  justify-content: center;
+  row-gap: 1rem;
+  
 }
 
 .footer-logo img {
@@ -52,6 +53,7 @@
 .social-links a {
   color: white;
   text-decoration: none;
+
 }
 
 .social-links a:hover {
