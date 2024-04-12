@@ -1,3 +1,8 @@
+
+.bg-color{
+  background-color: #F7EDE3;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -7,14 +12,15 @@
 
 .logo {
   height: 150px;
-  
+  margin-right: 70px;
 }
 
 .logo img {
   height: 100%;
   width: auto;
   object-fit: contain;
-  mix-blend-mode: multiply;
+  
+  
 }
 .links {
   display: flex;

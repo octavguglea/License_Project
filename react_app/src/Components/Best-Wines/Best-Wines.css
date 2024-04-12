@@ -43,28 +43,27 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 250px;
-  height: 400px;
-  background-color: white;
+  background-image: url("../../../public/Assets/e1.png");
+  width: 16vw;
+  height: 26rem;
+  background-size: 20vw 26rem;
+  background-position: center;
   justify-content: center;
   align-items: center;
-  box-shadow: 2px 4px 7px 12px rgba(20, 20, 20, 0.6);
 }
 
 .bottle {
   height: 70%;
-  width: auto;
-  object-fit: contain;
-  mix-blend-mode: multiply;
   
+  object-fit: cover;
 }
 
 .type {
-  padding-top: 20px;
-  padding-bottom: 10px;
-  font-size: 1.2rem;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-size: 1.4em;
 }
 .price {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 2em;
 }

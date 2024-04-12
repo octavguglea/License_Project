@@ -12,7 +12,7 @@ import {
 
 export const Footer = () => {
   return (
-    <div style={{ backgroundColor: "#333" }}>
+    <div className="bg-color-footer">
       <div className="footer">
         <h3 className="footer-header">Contacteaza-ne</h3>
         <div className="footer-content">
@@ -31,7 +31,7 @@ export const Footer = () => {
           </div>
 
           <div className="footer-logo column">
-            <img src="assets/logo_navbar.jpg" alt="Logo" />
+            <img src="assets/logo2.jpg" alt="Logo" />
             <ul className="social-links">
               <li>
                 <a href="#">
