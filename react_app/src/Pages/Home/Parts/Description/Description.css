@@ -1,6 +1,5 @@
 .description-body {
   display: flex;
-  height: 700px;
   flex-wrap: wrap;
 }
 .description-body > div {
@@ -75,19 +74,19 @@
   box-shadow: -4px 4px 8px 2px rgba(0, 0, 0, 0.5);
 }
 .image-part1 {
-  background-image: url("../../../public/Assets/crama.jpg");
+  background-image: url("../../../../../public/Assets/crama.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 .image-part2 {
-  background-image: url("../../../public/Assets/vinuri.jpg");
+  background-image: url("../../../../../public/Assets/vinuri.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 .image-part3 {
-    background-image: url("../../../public/Assets/Poveste.jpg");
+    background-image: url("../../../../../public/Assets/Poveste.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

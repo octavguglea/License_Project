@@ -1,5 +1,5 @@
 import React from "react";
-import "./Best-Wines.css";
+import "./BestWines.css";
 export const BestWines = () => {
   return (
     <div className="container">

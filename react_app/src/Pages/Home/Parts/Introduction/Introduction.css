@@ -1,7 +1,7 @@
 .introduction {
   text-align: center;
   padding: 6rem 0;
-  background: url("../../../public/Assets/intro-background.jpg"); /* Specify your image URL */
+  background: url("../../../../../public/Assets/intro-bg.jpg"); /* Specify your image URL */
   background-size: cover;
   background-position: center;
 }

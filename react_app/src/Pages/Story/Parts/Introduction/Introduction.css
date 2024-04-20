@@ -1,0 +1,21 @@
+.story-introduction{
+    text-align: center;
+    padding: 6rem 0;
+    background: url("../../../../../public/Assets/povestea-bg.jpg"); /* Specify your image URL */
+    background-size: cover;
+    background-position: center;
+}
+
+.story-introduction__title{
+    font-size: 6.5rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.story-introduction__text{
+    font-size: 2.25rem;
+    color: white;
+    max-width: 35rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
