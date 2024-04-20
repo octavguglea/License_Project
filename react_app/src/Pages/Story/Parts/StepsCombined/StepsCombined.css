@@ -3,9 +3,7 @@
   flex-wrap: wrap;
   
 }
-.StepsCombined-container > div {
-  /* flex: 1; */
-}
+
 .StepsCombined-block {
   display: flex;
   flex-direction: column;

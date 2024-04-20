@@ -34,8 +34,13 @@
   text-decoration: none;
   font-size: 1.2em;
   font-weight: bold;
+  transition: ease-out 0.3s;
 }
 
 .links a:hover {
   color: rgb(248, 76, 62);
+  text-decoration: underline; 
+  text-underline-offset: 4px; 
+  text-decoration-thickness: 2px; 
+  text-decoration-color: rgb(248, 76, 62); 
 }

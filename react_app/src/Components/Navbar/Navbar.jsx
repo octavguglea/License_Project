@@ -14,7 +14,7 @@ export const Navbar = () => {
           <a href="mailto:octavianguglea@gmail.com">Vinuri</a>
           <a href="/">Colectii Speciale</a>
           <a href="/story">Povestea</a>
-          <a href="/">Contact</a>
+          <a href="/contact">Contact</a>
           <a href="/">Magazin Online</a>
         </div>
       </div>
