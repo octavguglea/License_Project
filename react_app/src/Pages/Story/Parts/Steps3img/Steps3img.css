@@ -8,7 +8,6 @@
   display: flex;
   flex-wrap: wrap;
   padding-inline: calc(5% + 10vw);
-  
 
   gap: 4%;
 }
@@ -57,7 +56,7 @@
 }
 
 .leaf {
-  width: 60px;
+  width: 100px;
   height: 50px;
   margin-top: 13px;
   padding-inline: 20px;

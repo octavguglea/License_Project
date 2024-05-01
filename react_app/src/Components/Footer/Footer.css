@@ -56,7 +56,7 @@
   text-decoration: none;
   display: block;
 
-  position: relative;
+  
   padding: 0.5rem;
   border-radius: 0.25rem;
   transition: ease-out 0.5s;
@@ -87,4 +87,19 @@
 .copyright {
   text-align: center;
   margin-top: 90px;
+}
+
+
+@media (max-width: 900px) {
+  .footer-content {
+    flex-direction: column;
+    row-gap: 70px;
+  }
+
+  .column {
+    width: 100%;
+  }
+  .column:nth-child(3){
+    padding-top: 40px;
+  }
 }

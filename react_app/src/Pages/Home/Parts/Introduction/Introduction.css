@@ -22,6 +22,8 @@
 
 .introduction__button {
   display: inline-block;
+  justify-content: center;
+  align-items: center;
   padding: 1rem 3rem;
   border-radius: 10px;
   background-color: rgb(40, 40, 40);

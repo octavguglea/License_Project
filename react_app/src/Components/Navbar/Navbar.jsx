@@ -1,6 +1,15 @@
 import React from "react";
 import "./Navbar.css";
+import { useRef } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+
 export const Navbar = () => {
+  const navRef = useRef();
+  const showNavbar = () => {
+    navRef.current.classList.toggle("responsive_nav");
+    console.log(navRef.current);
+  };
+
   return (
     <div className="bg-color">
       <div className="navbar">
@@ -10,12 +19,20 @@ export const Navbar = () => {
           </a>
         </div>
         <div className="links">
-          <a href="/">Crama Guglea</a>
-          <a href="mailto:octavianguglea@gmail.com">Vinuri</a>
-          <a href="/">Colectii Speciale</a>
-          <a href="/story">Povestea</a>
-          <a href="/contact">Contact</a>
-          <a href="/">Magazin Online</a>
+          <nav ref={navRef} className="navigation">
+            <a href="/">Crama Guglea</a>
+            <a href="/wines">Vinuri</a>
+            <a href="/">Colectii Speciale</a>
+            <a href="/story">Povestea</a>
+            <a href="/contact">Contact</a>
+            
+            <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+              <FaTimes/>
+            </button>
+          </nav>
+          <button className="nav-btn " onClick={showNavbar}>
+            <FaBars />
+          </button>
         </div>
       </div>
     </div>

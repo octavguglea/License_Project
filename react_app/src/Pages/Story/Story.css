@@ -1,8 +1,8 @@
-
-.Home-container{
-    display: flex;
-    flex-direction: column;
-    gap: 125px;
-    margin-inline: 2%;
-    margin-bottom: 30px;
+.Home-container {
+  display: flex;
+  flex-direction: column;
+  gap: 125px;
+  margin-inline: 2%;
+  margin-bottom: 30px;
 }
+

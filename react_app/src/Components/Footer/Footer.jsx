@@ -34,17 +34,17 @@ export const Footer = () => {
             <img src="assets/logo2.jpg" alt="Logo" />
             <ul className="social-links">
               <li>
-                <a href="#">
+                <a href="/">
                   <FacebookIcon fontSize="large" />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="/">
                   <InstagramIcon fontSize="large" />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="/">
                   <TwitterIcon fontSize="large" />
                 </a>
               </li>
