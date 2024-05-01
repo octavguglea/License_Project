@@ -1,0 +1,67 @@
+.slider2 {
+  position: absolute;
+  inset: 80px 200px 80px 80px;
+
+  background: #ccc;
+  border-radius: 20px;
+}
+.slider2 .slides2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 240px;
+  height: 320px;
+  background: var(--img);
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  transition: 0.5s;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  
+}
+
+
+.slider2 .slides2:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(0);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.slider2 .slides2:nth-child(2) {
+  left: calc(50% + 240px);
+  background-size: cover;
+}
+.slider2 .slides2:nth-child(3) {
+  left: calc(50% + 500px);
+  background-size: cover;
+}
+
+.slider2 .slides2:nth-child(4) {
+  left: calc(50% + 760px);
+  background-size: cover;
+}
+.slider2 .slides2:nth-child(5) {
+  left: calc(50% + 1020px);
+  background-size: cover;
+}
+.slider2 .slides2:nth-child(6) {
+  left: calc(50% + 1280px);
+  background-size: cover;
+  opacity: 0;
+}
+
+
+.slider2 .slides2:nth-child(1) .content {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.5;
+  }
+  

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./WineSlider.css";
 
-export const WineSlider = () => {
+export const WineSlider = ({ slides}) => {
   useEffect(() => {
     const next = document.querySelector(".next");
     const prev = document.querySelector(".prev");
@@ -29,86 +29,32 @@ export const WineSlider = () => {
   return (
     <div className="slider-container">
       <div className="slider">
-        <div
-          className="slides"
-          style={{
-            "--img": `url('/Assets/slider-introduction.jpg')`,
-            color: 'white',
-            'background-size': 'cover'
-          }}
-        >
-          <div className="content">
-            <h2>Slide 01</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
-              quis et doloribus voluptatibus?
-            </p>
-            <a href="#!" className="introduction__button"  >
-              Cumpara Acum
-            </a>
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className="slides"
+            style={
+              index === 0
+                ? {
+                    "--img": `url('${slide.image}')`,
+                    color: "white",
+                    backgroundSize: "cover",
+                  }
+                : {
+                    "--img": `url('${slide.image}')`,
+                  }
+            }
+          >
+            <div className="content">
+              <h2>{slide.title}</h2>
+              <p>{slide.subtitle}</p>
+              <p>{slide.description}</p>
+              <a href="#!" className="introduction__button">
+                {slide.buttonText}
+              </a>
+            </div>
           </div>
-        </div>
-        <div
-          className="slides"
-          style={{ "--img": `url('/Assets/slider-red-1.png')` }}
-        >
-          <div className="content">
-            <h2>Slide 01</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
-              quis et doloribus voluptatibus?
-            </p>
-            <a href="#!" className="introduction__button">
-              Cumpara Acum
-            </a>
-          </div>
-        </div>
-        <div
-          className="slides"
-          style={{ "--img": `url('/Assets/slider-red-2.png')` }}
-        >
-          <div className="content">
-            <h2>Slide 02</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
-              quis et doloribus voluptatibus?
-            </p>
-            <a href="#!" className="introduction__button">
-              Cumpara Acum
-            </a>
-          </div>
-        </div>
-        <div
-          className="slides"
-          style={{ "--img": `url('/Assets/slider-red-3.png')` }}
-        >
-          <div className="content">
-            <h2>Slide 03</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
-              quis et doloribus voluptatibus?
-            </p>
-            <a href="#!" className="introduction__button">
-              Cumpara Acum
-            </a>
-          </div>
-        </div>
-
-        <div
-          className="slides"
-          style={{ "--img": `url('/Assets/slider-red-4.png')` }}
-        >
-          <div className="content">
-            <h2>Slide 03</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
-              quis et doloribus voluptatibus?
-            </p>
-            <a href="#!" className="introduction__button">
-              Cumpara Acum
-            </a>
-          </div>
-        </div>
+        ))}
       </div>
       <div className="buttons">
         <span className="prev"></span>
