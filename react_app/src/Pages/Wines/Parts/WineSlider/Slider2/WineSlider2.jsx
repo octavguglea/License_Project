@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./WineSlider.css";
+import "../Slider1/WineSlider.css";
 import "./WineSlider2.css"
 
 export const WineSlider2 = ({ slides2}) => {
@@ -41,6 +41,7 @@ export const WineSlider2 = ({ slides2}) => {
                     "--img": `url('${slide.image}')`,
                     color: "black",
                     backgroundSize: "cover",
+                    backgroundPosition:"center",
                   }
                 : {
                     "--img": `url('${slide.image}')`,
@@ -51,7 +52,7 @@ export const WineSlider2 = ({ slides2}) => {
               <h2>{slide.title}</h2>
               <p>{slide.subtitle}</p>
               <p>{slide.description}</p>
-              <a href="#!" className="introduction__button">
+              <a href="#!" className={`introduction__button${index === 0 ? ' hide' : ''}`}>
                 {slide.buttonText}
               </a>
             </div>

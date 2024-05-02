@@ -1,11 +1,11 @@
-.slider2 {
+.slider3 {
   position: absolute;
   inset: 80px 200px 80px 80px;
 
   background: #ccc;
   border-radius: 20px;
 }
-.slider2 .slides2 {
+.slider3 .slides3 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -22,7 +22,7 @@
   align-items: flex-start;
 }
 
-.slider2 .slides2:nth-child(1) {
+.slider3 .slides3:nth-child(1) {
   position: absolute;
   top: 0;
   left: 0;
@@ -33,30 +33,30 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
-.slider2 .slides2:nth-child(2) {
+.slider3 .slides3:nth-child(2) {
   left: calc(50% + 240px);
   background-size: cover;
 }
-.slider2 .slides2:nth-child(3) {
+.slider3 .slides3:nth-child(3) {
   left: calc(50% + 500px);
   background-size: cover;
 }
 
-.slider2 .slides2:nth-child(4) {
+.slider3 .slides3:nth-child(4) {
   left: calc(50% + 760px);
   background-size: cover;
 }
-.slider2 .slides2:nth-child(5) {
+.slider3 .slides3:nth-child(5) {
   left: calc(50% + 1020px);
-  background-size: cover;
+  background-size: cover3;
 }
-.slider2 .slides2:nth-child(6) {
+.slider3 .slides3:nth-child(6) {
   left: calc(50% + 1280px);
   background-size: cover;
   opacity: 0;
 }
 
-.slider2 .slides2:nth-child(1) .content {
+.slider3 .slides3:nth-child(1) .content {
   opacity: 1;
   transform: translateY(0px);
   transition-delay: 0.5;
@@ -66,12 +66,12 @@
   .slider-container {
   }
 
-  .slider2 {
+  .slider3 {
     position: absolute;
     inset: 40px 40px 200px 40px;
   }
 
-  .slider2 .slides2 {
+  .slider3 .slides3 {
     width: 100px;
     height: 100px;
     bottom: -170px;
@@ -79,25 +79,37 @@
     top: initial;
   }
 
-  .slider2 .slides2:nth-child(1) {
+  .slider3 .slides3:nth-child(1) {
     top: initial;
     bottom: 0px;
   }
 
-  .slider2 .slides2:nth-child(2) {
+  .slider3 .slides3:nth-child(2) {
     left: 0px;
   }
-  .slider2 .slides2:nth-child(3) {
+  .slider3 .slides3:nth-child(3) {
     left: 120px;
   }
-  .slider2 .slides2:nth-child(4) {
+  .slider3 .slides3:nth-child(4) {
     left: 240px;
   }
-  .slider2 .slides2:nth-child(5) {
+  .slider3 .slides3:nth-child(5) {
     left: 360px;
     opacity: 0;
   }
-  .slider2 .slides2:nth-child(6) {
+  .slider3 .slides3:nth-child(6) {
     left: 480px;
+  }
+}
+/* //////////////// */
+@media (max-width: 900px) {
+  .slider3 .slides3 {
+    background-position: 140% center;
+  }
+}
+
+@media (max-width: 600px) {
+  .slider3 .slides3 {
+    background-position: 100px center;
   }
 }

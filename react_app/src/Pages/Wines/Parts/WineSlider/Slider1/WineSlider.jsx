@@ -39,6 +39,7 @@ export const WineSlider = ({ slides}) => {
                     "--img": `url('${slide.image}')`,
                     color: "white",
                     backgroundSize: "cover",
+                    backgroundPosition:"40%",
                   }
                 : {
                     "--img": `url('${slide.image}')`,
@@ -49,7 +50,7 @@ export const WineSlider = ({ slides}) => {
               <h2>{slide.title}</h2>
               <p>{slide.subtitle}</p>
               <p>{slide.description}</p>
-              <a href="#!" className="introduction__button">
+              <a href="#!" className={`introduction__button${index === 0 ? ' hide' : ''}`}>
                 {slide.buttonText}
               </a>
             </div>
