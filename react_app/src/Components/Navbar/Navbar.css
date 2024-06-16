@@ -2,7 +2,7 @@
   background-color: #f7ede3;
 }
 
-.navbar {
+.navbar-wines {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -56,7 +56,7 @@
 }
 
 @media (max-width: 950px) {
-  .navbar {
+  .navbar-wines {
     justify-content: space-between;
     padding-inline: 4%;
   }

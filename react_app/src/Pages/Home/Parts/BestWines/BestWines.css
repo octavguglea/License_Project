@@ -2,7 +2,7 @@
   margin: 0;
 }
 
-.container {
+.bestwines-container {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -12,7 +12,7 @@
   padding-bottom: 100px;
 }
 
-.container::before {
+.bestwines-container::before {
   content: "";
   position: absolute;
   top: 0;
@@ -26,20 +26,20 @@
   z-index: -1; /* Ensure the background overlay is behind other content */
 }
 
-.title {
+.bestwines-title {
   font-size: 3.5rem;
   color: white;
   margin-bottom: 40px;
 }
 
-.collection {
+.bestwines-collection {
   position: relative;
   display: flex;
   flex-direction: row;
   column-gap: 1rem;
 }
 
-.collection-item {
+.bestwines-collection-item {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -52,18 +52,18 @@
   align-items: center;
 }
 
-.bottle {
+.bestwines-bottle {
   height: 70%;
   
   object-fit: cover;
 }
 
-.type {
+.bestwines-type {
   padding-top: 7px;
   padding-bottom: 7px;
   font-size: 1.4em;
 }
-.price {
+.bestwines-price {
   font-weight: bold;
   font-size: 2em;
 }

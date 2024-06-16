@@ -66,6 +66,7 @@ export const Story = () => {
           "/Assets/filtrare1.jpg",
           "/Assets/filtrare2.jpg",
           "/Assets/filtrare3.jpg",
+          
         ]}
       />
 

@@ -7,12 +7,11 @@ export const Navbar = () => {
   const navRef = useRef();
   const showNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");
-    console.log(navRef.current);
   };
 
   return (
     <div className="bg-color">
-      <div className="navbar">
+      <div className="navbar-wines">
         <div className="logo">
           <a href="/">
             <img src="assets/logo1.jpg" alt="Logo" />
@@ -22,12 +21,12 @@ export const Navbar = () => {
           <nav ref={navRef} className="navigation">
             <a href="/">Crama Guglea</a>
             <a href="/wines">Vinuri</a>
-            <a href="/">Colectii Speciale</a>
+            <a href="/signup">Colectii Speciale</a>
             <a href="/story">Povestea</a>
             <a href="/contact">Contact</a>
-            
+
             <button className="nav-btn nav-close-btn" onClick={showNavbar}>
-              <FaTimes/>
+              <FaTimes />
             </button>
           </nav>
           <button className="nav-btn " onClick={showNavbar}>
