@@ -11,7 +11,7 @@ export default function Signup() {
   const { signup } = useAuth();
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -20,11 +20,15 @@ export default function Signup() {
       return setError("Passwords do not match");
     }
 
+    if (passwordRef.current.value.length < 6) {
+      return setError("Password must be at least 6 characters long");
+    }
+
     try {
       setError("");
       setLoading(true);
       await signup(emailRef.current.value, passwordRef.current.value);
-      navigate("/dashboard")
+      navigate("/dashboard");
     } catch (error) {
       console.error("Signup error:", error);
       setError("Failed to create an account");
