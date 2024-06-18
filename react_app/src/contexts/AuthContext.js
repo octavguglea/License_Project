@@ -6,6 +6,8 @@ import {
   sendPasswordResetEmail,
   onAuthStateChanged,
   signOut,
+  updateEmail as firebaseUpdateEmail,
+  updatePassword as firebaseUpdatePassword,
 } from "firebase/auth";
 
 const AuthContext = React.createContext();
@@ -15,7 +17,7 @@ export function useAuth() {
 }
 
 export function AuthProvider({ children }) {
-  const [currentUser, setCurrentUser] = useState();
+  const [currentUser, setCurrentUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
   function signup(email, password) {
@@ -34,6 +36,22 @@ export function AuthProvider({ children }) {
     return sendPasswordResetEmail(auth, email);
   }
 
+  function updateEmail(email) {
+    if (currentUser) {
+      return firebaseUpdateEmail(currentUser, email);
+    } else {
+      return Promise.reject(new Error("No user is currently signed in."));
+    }
+  }
+
+  function updatePassword(password) {
+    if (currentUser) {
+      return firebaseUpdatePassword(currentUser, password);
+    } else {
+      return Promise.reject(new Error("No user is currently signed in."));
+    }
+  }
+
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       setCurrentUser(user);
@@ -49,6 +67,8 @@ export function AuthProvider({ children }) {
     login,
     logout,
     resetPassword,
+    updateEmail,
+    updatePassword,
   };
 
   return (
